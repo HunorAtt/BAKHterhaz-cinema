@@ -4,32 +4,26 @@ import java.sql.SQLException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import org.h2.tools.Server;
+import javafx.scene.Parent;
 
-public class Application {
+public class Application extends javafx.application.Application {
 
-    public static void main(String[] args) throws SQLException {
-        startDatabase();
+        @Override
+        public void start(Stage primaryStage) throws Exception {
+            // A korábbi képed alapján ez az FXML pontos útvonala:
+            Parent root = FXMLLoader.load(getClass().getResource("/META-INF/FXML-ek/FXMLMoziJegyFoglalas.fxml"));
 
-        final EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("br.com.fredericci.pu");
-        final EntityManager entityManager = entityManagerFactory.createEntityManager();
+            primaryStage.setTitle("Mozijegy Foglaló");
+            primaryStage.setScene(new Scene(root, 800, 600));
+            primaryStage.show();
+        }
 
-        Customer customer = new Customer();
-        customer.setFirstName("Dennys");
-        customer.setLastName("Fredericci");
-
-        entityManager.getTransaction().begin();
-        entityManager.persist(customer);
-        entityManager.getTransaction().commit();
-
-        System.out.println("Open your browser and navigate to http://localhost:8082/");
-        System.out.println("JDBC URL: jdbc:h2:mem:my_database");
-        System.out.println("User Name: sa");
-        System.out.println("Password: ");
-
+        public static void main(String[] args) {
+            launch(args);
+        }
     }
-
-    private static void startDatabase() throws SQLException {
-        new Server().runTool("-tcp", "-web", "-ifNotExists");
-    }
-}
