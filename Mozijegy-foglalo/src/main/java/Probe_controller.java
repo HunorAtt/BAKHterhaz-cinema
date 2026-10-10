@@ -9,41 +9,17 @@ import java.awt.*;
 
 public class Probe_controller {
 
+        int lefoglaltSzekekSzama = 0;
         @FXML
         private Label Szoveg;
 
         @FXML
-        private ImageView szekKep0;
-        @FXML
-        private ImageView szekKep1;
-
-        @FXML
-        private ImageView szekKep2;
-
-        @FXML
-        private ImageView szekKep3;
-
-        @FXML
-        private ImageView szekKep4;
-
-        @FXML
-        private ImageView szekKep41;
-
-        @FXML
-        private ImageView szekKep42;
-
-        @FXML
-        private ImageView szekKep43;
-
-        @FXML
-        private ImageView szekKep44;
-
-        @FXML
-        private ImageView szekKep5;
+        private Label pontok;
 
 
         @FXML
         void SzekLefoglalas(ActionEvent event) {
+
             Button melyikGomb = (Button) event.getSource();
             ImageView aktualisSzek = (ImageView) melyikGomb.getGraphic();
             if (aktualisSzek.getEffect() == null)
@@ -54,11 +30,18 @@ public class Probe_controller {
                 foglalt.setBrightness(0.21);
                 foglalt.setSaturation(0.47);
                 aktualisSzek.setEffect(foglalt);
-
+                lefoglaltSzekekSzama++;
+                pontok.setText(" "+lefoglaltSzekekSzama);
             }
             else {
                 aktualisSzek.setEffect(null);
-                Szoveg.setText("Nincs még lefoglalt széked");
+                lefoglaltSzekekSzama--;
+                pontok.setText(" "+lefoglaltSzekekSzama);
+                if(lefoglaltSzekekSzama == 0)
+                {
+                    Szoveg.setText("Nincs még lefoglalt széked");
+                }
+
             }
 
 
