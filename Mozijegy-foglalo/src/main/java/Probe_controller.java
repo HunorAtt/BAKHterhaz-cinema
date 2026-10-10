@@ -3,33 +3,17 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.effect.ColorAdjust;
 import javafx.scene.image.ImageView;
+import javafx.scene.control.Button;
 
 import java.awt.*;
 
 public class Probe_controller {
 
-    void szekFoglalasMetodus()
-    {
-        ColorAdjust foglalt = new ColorAdjust();
-        foglalt.setHue(-0.69);
-        foglalt.setBrightness(0.21);
-        foglalt.setSaturation(0.47);
-        if (szekKep.getEffect() != null)
-        {
-            szekKep.setEffect(null);
-            Szoveg.setText("Nincs még lefoglalt széked");
-        }
-        else {
-            Szoveg.setText("Lefoglaltad az xy. széket");
-            szekKep.setEffect(foglalt);
-        }
-    }
-
         @FXML
         private Label Szoveg;
 
         @FXML
-        private ImageView szekKep;
+        private ImageView szekKep0;
         @FXML
         private ImageView szekKep1;
 
@@ -60,7 +44,22 @@ public class Probe_controller {
 
         @FXML
         void SzekLefoglalas(ActionEvent event) {
-            szekFoglalasMetodus();
+            Button melyikGomb = (Button) event.getSource();
+            ImageView aktualisSzek = (ImageView) melyikGomb.getGraphic();
+            if (aktualisSzek.getEffect() == null)
+            {
+                Szoveg.setText("Lefoglaltad az xy. széket");
+                ColorAdjust foglalt = new ColorAdjust();
+                foglalt.setHue(-0.69);
+                foglalt.setBrightness(0.21);
+                foglalt.setSaturation(0.47);
+                aktualisSzek.setEffect(foglalt);
+
+            }
+            else {
+                aktualisSzek.setEffect(null);
+                Szoveg.setText("Nincs még lefoglalt széked");
+            }
 
 
 
