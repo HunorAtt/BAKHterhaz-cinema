@@ -30,10 +30,18 @@ class PricingServiceTest {
     }
 
     @Test
-    @DisplayName("A nulla vagy negatív szám esetén IllegalArgumentException")
-    void testZeroOrNegativeTicketCountThrowsException() {
+    @DisplayName("A nulla jegyszám esetén IllegalArgumentException")
+    void testZeroTicketCountThrowsException() {
         assertThrows(IllegalArgumentException.class, () ->
                 pricingService.calculatePrice(0, false, false)
+        );
+    }
+
+    @Test
+    @DisplayName("Negatív jegyszám szám esetén IllegalArgumentException")
+    void testNegativeTicketCountThrowsException() {
+        assertThrows(IllegalArgumentException.class, () ->
+                pricingService.calculatePrice(-1, false, false)
         );
     }
 }
