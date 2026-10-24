@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="filmValasztoController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.filmValasztoController">
    <children>
       <Pane layoutX="38.0" layoutY="41.0" prefHeight="200.0" prefWidth="200.0">
          <children>
