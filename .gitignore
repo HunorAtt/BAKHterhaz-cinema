@@ -2,3 +2,20 @@
 /shelf/
 /workspace.xml
 .idea/
+*.iml
+
+# Maven build kimenetek bárhol a projektben
+**/target/
+target/
+
+# IntelliJ és egyéb IDE konfigurációk
+**/.idea/
+.idea/
+**/*.iml
+*.iml
+*.iws
+*.ipr
+
+# Átmeneti és operációs rendszer fájlok
+.DS_Store
+Thumbs.db
