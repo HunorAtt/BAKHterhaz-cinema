@@ -37,6 +37,15 @@ public class Customer {
         id = customerCounter++;
     }
 
+
+    /**
+     * Uj felhasznalo discount nelkul
+     *
+     * @param firstName
+     * @param lastName
+     * @param mail
+     * @param password
+     */
     public Customer(String firstName, String lastName, String mail, String password) {
         this(firstName, lastName, mail, password, Discount.none);
     }
