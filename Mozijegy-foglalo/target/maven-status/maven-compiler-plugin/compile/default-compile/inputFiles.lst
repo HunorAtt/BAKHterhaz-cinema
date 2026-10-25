@@ -1,6 +1,7 @@
-D:\Dev\BAKHterhaz\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\filmValasztoController.java
-D:\Dev\BAKHterhaz\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\org\example\Application.java
-D:\Dev\BAKHterhaz\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\org\example\Customer.java
-D:\Dev\BAKHterhaz\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\org\example\service\CustomerValidator.java
-D:\Dev\BAKHterhaz\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\org\example\service\PricingService.java
-D:\Dev\BAKHterhaz\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\Probe_controller.java
+D:\MernokiProjekt\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\org\example\Application.java
+D:\MernokiProjekt\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\org\example\controllers\filmValasztoController.java
+D:\MernokiProjekt\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\org\example\controllers\Probe_controller.java
+D:\MernokiProjekt\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\org\example\Customer.java
+D:\MernokiProjekt\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\org\example\Discount.java
+D:\MernokiProjekt\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\org\example\service\CustomerValidator.java
+D:\MernokiProjekt\BAKHterhaz-cinema\Mozijegy-foglalo\src\main\java\org\example\service\PricingService.java

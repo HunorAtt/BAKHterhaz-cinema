@@ -15,7 +15,6 @@ public class Application extends javafx.application.Application {
 
         @Override
         public void start(Stage primaryStage) throws Exception {
-            // A korábbi képed alapján ez az FXML pontos útvonala:
             Parent root = FXMLLoader.load(getClass().getResource("/META-INF/FXML-ek/FXMLMoziJegyFoglalas.fxml"));
 
             primaryStage.setTitle("Mozijegy Foglaló");
