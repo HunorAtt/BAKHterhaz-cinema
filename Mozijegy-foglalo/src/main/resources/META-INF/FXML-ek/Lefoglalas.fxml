@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 
@@ -51,9 +52,9 @@
             <Font size="38.0" />
          </font>
       </Label>
-      <Button layoutX="395.0" layoutY="471.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="62.0" style="-fx-background-radius: 5;" text="Vissza" />
+      <Button layoutX="395.0" layoutY="471.0" mnemonicParsing="false" onAction="#VisszaGomb" prefHeight="23.0" prefWidth="62.0" style="-fx-background-radius: 5;" text="Vissza" />
       <Button layoutX="469.0" layoutY="471.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="62.0" style="-fx-background-radius: 5; -fx-background-color: #3498db;" text="Mentés" />
-      <VBox layoutX="321.0" layoutY="91.0" prefHeight="338.0" prefWidth="271.0">
+      <VBox layoutX="321.0" layoutY="91.0" prefHeight="120.0" prefWidth="271.0">
          <children>
             <Label prefHeight="54.0" prefWidth="190.0" text="Rendelés összesítése">
                <font>
@@ -64,20 +65,26 @@
                <children>
                   <Label prefHeight="26.0" prefWidth="187.0" text="Lefoglalt jegyek száma:">
                      <font>
-                        <Font size="16.0" />
+                        <Font name="Times New Roman" size="16.0" />
                      </font>
                   </Label>
                   <Label prefHeight="26.0" prefWidth="68.0" />
-                  <Label prefHeight="38.0" prefWidth="28.0" text="  0">
+                  <Label fx:id="JegySzam1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="26.0" prefWidth="42.0" text="  0" textAlignment="RIGHT">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox prefHeight="4.0" prefWidth="271.0">
                <children>
-                  <Label text="Jegy ár">
+                  <Label prefHeight="26.0" prefWidth="97.0" text="Jegy ár:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="87.0" />
+                  <Label fx:id="JegySzam2" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="26.0" prefWidth="85.0" text="0">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -86,6 +93,17 @@
             </HBox>
          </children>
       </VBox>
+      <Line endX="148.199951171875" endY="-1.0" layoutX="444.0" layoutY="212.0" startX="-123.0" startY="-1.0" />
+      <Label layoutX="321.0" layoutY="229.0" text="Összesen:">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="JegySzam" layoutX="438.0" layoutY="229.0" prefHeight="38.0" prefWidth="142.0" text="0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
    </children>
    <effect>
       <DropShadow />

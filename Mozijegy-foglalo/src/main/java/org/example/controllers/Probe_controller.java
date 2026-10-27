@@ -3,21 +3,16 @@ package org.example.controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.effect.ColorAdjust;
 import javafx.scene.image.ImageView;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
 import javafx.scene.Parent;
 import java.io.IOException;
 
-import java.io.IOException;
+public  class Probe_controller {
 
-public class Probe_controller {
-
-        int lefoglaltSzekekSzama = 0;
+        public int lefoglaltSzekekSzama = 0;
 
         @FXML
         private Label pontok;
@@ -25,11 +20,15 @@ public class Probe_controller {
 
     @FXML
     void LefoglaltniAHelyet(ActionEvent event) throws IOException {
-            // 1. Betöltjük a második FXML fájlt
-            Parent ujNezezet = FXMLLoader.load(getClass().getResource("/META-INF/FXML-ek/Lefoglalas.fxml"));
+       FXMLLoader loader = new FXMLLoader(getClass().getResource("/META-INF/FXML-ek/Lefoglalas.fxml"));
 
-            // 2. A "pontok" felirat segítségével megfogjuk a jelenlegi ablakot, és lecseréljük a tartalmát
-            pontok.getScene().setRoot(ujNezezet);
+        Parent ujNezet = loader.load();
+
+        LefoglalasController masikController = loader.getController();
+
+        masikController.adatAtadas(lefoglaltSzekekSzama);
+
+        pontok.getScene().setRoot(ujNezet);
 
     }
 
