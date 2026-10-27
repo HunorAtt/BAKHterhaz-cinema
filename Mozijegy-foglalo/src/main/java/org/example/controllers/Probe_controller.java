@@ -10,12 +10,15 @@ import javafx.scene.control.Button;
 public class Probe_controller {
 
         int lefoglaltSzekekSzama = 0;
-        @FXML
-        private Label Szoveg;
 
         @FXML
         private Label pontok;
 
+
+    @FXML
+    void LefoglaltniAHelyet(ActionEvent event) {
+
+    }
 
         @FXML
         void SzekLefoglalas(ActionEvent event) {
@@ -24,7 +27,6 @@ public class Probe_controller {
             ImageView aktualisSzek = (ImageView) melyikGomb.getGraphic();
             if (aktualisSzek.getEffect() == null)
             {
-                Szoveg.setText("Lefoglaltad az xy. széket");
                 ColorAdjust foglalt = new ColorAdjust();
                 foglalt.setHue(-0.69);
                 foglalt.setBrightness(0.21);
@@ -37,10 +39,7 @@ public class Probe_controller {
                 aktualisSzek.setEffect(null);
                 lefoglaltSzekekSzama--;
                 pontok.setText(" "+lefoglaltSzekekSzama);
-                if(lefoglaltSzekekSzama == 0)
-                {
-                    Szoveg.setText("Nincs még lefoglalt széked");
-                }
+
 
             }
 

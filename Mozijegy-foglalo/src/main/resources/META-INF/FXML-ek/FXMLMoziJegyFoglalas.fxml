@@ -10,432 +10,449 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.shape.QuadCurve?>
 <?import javafx.scene.shape.Rectangle?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(220,220,220,);" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Probe_controller">
+
+<StackPane xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Probe_controller">
    <children>
-      <Pane layoutX="72.0" layoutY="178.0" prefHeight="155.0" prefWidth="455.0">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(220,220,220,);">
          <children>
-            <Button layoutX="430.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep110" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-
-
-            </Button>
-            <Button layoutX="386.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep19" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="343.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep18" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="300.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep17" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="44.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep12" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep11" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="85.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep13" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="130.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep14" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="170.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep15" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="256.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep16" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="430.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep210" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="386.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep29" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="343.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep28" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="300.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep27" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="44.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep22" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep21" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="85.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep23" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="130.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep24" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="170.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep25" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="256.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep26" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="429.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep310" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="385.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep39" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="342.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep38" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="299.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep37" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="43.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep32" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="-1.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep31" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="84.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep33" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="129.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep34" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="169.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep35" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="255.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
-               <graphic>
-                  <ImageView fx:id="szekKep36" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../kepek/zoldSzek.png" />
-                     </image>
-                     <viewport>
-                        <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
-                     </viewport>
-                  </ImageView>
-               </graphic>
-            </Button>
+            <Pane layoutX="72.0" layoutY="178.0" prefHeight="155.0" prefWidth="455.0">
+               <children>
+                  <Button layoutX="430.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep110" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+      
+      
+                  </Button>
+                  <Button layoutX="386.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep19" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="343.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep18" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="300.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep17" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="44.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep12" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep11" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="85.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep13" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="130.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep14" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="170.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep15" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="256.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep16" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="430.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep210" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="386.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep29" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="343.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep28" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="300.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep27" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="44.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep22" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep21" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="85.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep23" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="130.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep24" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="170.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep25" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="256.0" layoutY="63.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep26" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="429.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep310" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="385.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep39" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="342.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep38" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="299.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep37" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="43.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep32" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="-1.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep31" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="84.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep33" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="129.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep34" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="169.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep35" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="255.0" layoutY="128.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="szekKep36" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../kepek/zoldSzek.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minX="210.0" minY="70.0" width="250.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <ImageView fitHeight="108.0" fitWidth="155.0" layoutX="226.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../kepek/film.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="46.0" layoutY="182.0" prefHeight="17.0" prefWidth="11.0" text="1" />
+            <Label layoutX="47.0" layoutY="245.0" prefHeight="17.0" prefWidth="11.0" text="2" />
+            <Label layoutX="46.0" layoutY="311.0" prefHeight="17.0" prefWidth="11.0" text="3" />
+            <Label layoutX="534.0" layoutY="180.0" prefHeight="17.0" prefWidth="11.0" text="1" />
+            <Label layoutX="535.0" layoutY="244.0" prefHeight="17.0" prefWidth="11.0" text="2" />
+            <Label layoutX="536.0" layoutY="309.0" prefHeight="17.0" prefWidth="11.0" text="3" />
+            <QuadCurve controlX="-31.4000244140625" controlY="-54.00001525878906" endX="201.79998779296875" endY="-1.52587890625E-5" fill="#717c8600" layoutX="329.0" layoutY="158.0" startX="-259.0" startY="-1.52587890625E-5" stroke="#0000008e" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="5.0" />
+            <Label layoutX="281.0" layoutY="136.0" text="Vászon" />
+            <HBox layoutX="111.0" layoutY="347.0" prefHeight="18.0" prefWidth="125.0">
+               <children>
+                  <Label text="Szabad hely (zöld)">
+                     <graphic>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b9630" height="16.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="237.0" layoutY="347.0" prefHeight="18.0" prefWidth="125.0">
+               <children>
+                  <Label text="Kijelölt hely (piros)">
+                     <graphic>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c231f" height="16.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="363.0" layoutY="347.0" prefHeight="18.0" prefWidth="125.0">
+               <children>
+                  <Label text="Foglalt hely (szürke)">
+                     <graphic>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7afaf" height="16.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <Button alignment="CENTER" layoutX="510.0" layoutY="362.0" mnemonicParsing="false" onAction="#LefoglaltniAHelyet" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: rgb(50,135,200);" text="Tovább" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" />
+            <Button layoutX="10.0" layoutY="362.0" mnemonicParsing="false" text="Vissza" />
+            <HBox layoutX="425.0" layoutY="44.0" prefHeight="18.0" prefWidth="138.0">
+               <children>
+                  <Label text="Vetítés időpontja:" />
+                  <Label prefHeight="18.0" prefWidth="34.0" text="19:30" />
+               </children>
+            </HBox>
+            <HBox layoutX="52.0" layoutY="44.0" prefHeight="18.0" prefWidth="156.0">
+               <children>
+                  <Label text="Lefoglalt jegyek száma:" />
+                  <Label fx:id="pontok" prefHeight="17.0" prefWidth="20.0" text=" 0" />
+               </children>
+            </HBox>
+            <ImageView fitHeight="12.0" fitWidth="21.0" layoutX="24.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../kepek/ticket.png" />
+               </image>
+            </ImageView>
          </children>
-      </Pane>
-      <ImageView fitHeight="108.0" fitWidth="155.0" layoutX="226.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../kepek/film.jpg" />
-         </image>
          <effect>
-            <DropShadow />
+            <ColorAdjust />
          </effect>
-      </ImageView>
-      <Label fx:id="pontok" layoutX="42.0" layoutY="26.0" prefHeight="17.0" prefWidth="20.0" text="0" />
-      <ImageView fitHeight="12.0" fitWidth="21.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../kepek/ticket.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="46.0" layoutY="182.0" prefHeight="17.0" prefWidth="11.0" text="1" />
-      <Label layoutX="47.0" layoutY="245.0" prefHeight="17.0" prefWidth="11.0" text="2" />
-      <Label layoutX="46.0" layoutY="311.0" prefHeight="17.0" prefWidth="11.0" text="3" />
-      <Label layoutX="534.0" layoutY="180.0" prefHeight="17.0" prefWidth="11.0" text="1" />
-      <Label layoutX="535.0" layoutY="244.0" prefHeight="17.0" prefWidth="11.0" text="2" />
-      <Label layoutX="536.0" layoutY="309.0" prefHeight="17.0" prefWidth="11.0" text="3" />
-      <QuadCurve controlX="-31.4000244140625" controlY="-54.00001525878906" endX="201.79998779296875" endY="-1.52587890625E-5" fill="#717c8600" layoutX="329.0" layoutY="158.0" startX="-259.0" startY="-1.52587890625E-5" stroke="#0000008e" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="5.0" />
-      <Label layoutX="281.0" layoutY="136.0" text="Vászon" />
-      <HBox layoutX="111.0" layoutY="347.0" prefHeight="18.0" prefWidth="125.0">
-         <children>
-            <Label text="Szabad hely (zöld)">
-               <graphic>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b9630" height="16.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
-               </graphic>
-            </Label>
-         </children>
-      </HBox>
-      <HBox layoutX="237.0" layoutY="347.0" prefHeight="18.0" prefWidth="125.0">
-         <children>
-            <Label text="Kijelölt hely (piros)">
-               <graphic>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c231f" height="16.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
-               </graphic>
-            </Label>
-         </children>
-      </HBox>
-      <HBox layoutX="363.0" layoutY="347.0" prefHeight="18.0" prefWidth="125.0">
-         <children>
-            <Label text="Foglalt hely (szürke)">
-               <graphic>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7afaf" height="16.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
-               </graphic>
-            </Label>
-         </children>
-      </HBox>
-      <Button alignment="CENTER" layoutX="510.0" layoutY="362.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: rgb(50,135,200);" text="Tovább" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" />
-      <Button layoutX="10.0" layoutY="362.0" mnemonicParsing="false" text="Vissza" />
+      
+      
+      </AnchorPane>
    </children>
-   <effect>
-      <ColorAdjust />
-   </effect>
-
-
-</AnchorPane>
+</StackPane>
