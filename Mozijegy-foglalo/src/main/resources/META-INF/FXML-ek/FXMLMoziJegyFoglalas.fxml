@@ -4,15 +4,18 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.Rectangle?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Probe_controller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(220,220,220,);" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Probe_controller">
    <children>
-      <Label fx:id="Szoveg" layoutX="7.0" layoutY="23.0" prefHeight="17.0" prefWidth="187.0" text="Label" />
-      <Pane layoutX="73.0" layoutY="190.0" prefHeight="155.0" prefWidth="455.0">
+      <Pane layoutX="72.0" layoutY="178.0" prefHeight="155.0" prefWidth="455.0">
          <children>
             <Button layoutX="430.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
                <graphic>
@@ -25,8 +28,8 @@
                      </viewport>
                   </ImageView>
                </graphic>
-      
-      
+
+
             </Button>
             <Button layoutX="386.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SzekLefoglalas" prefHeight="28.0" prefWidth="22.0" style="-fx-background-color: transparent;">
                <graphic>
@@ -378,10 +381,13 @@
             </Button>
          </children>
       </Pane>
-      <ImageView fitHeight="146.0" fitWidth="276.0" layoutX="191.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="108.0" fitWidth="155.0" layoutX="226.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../kepek/film.jpg" />
          </image>
+         <effect>
+            <DropShadow />
+         </effect>
       </ImageView>
       <Label fx:id="pontok" layoutX="42.0" layoutY="366.0" prefHeight="17.0" prefWidth="20.0" text="0" />
       <ImageView fitHeight="12.0" fitWidth="21.0" layoutX="19.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
@@ -389,12 +395,41 @@
             <Image url="@../kepek/ticket.png" />
          </image>
       </ImageView>
-      <Label layoutX="33.0" layoutY="196.0" prefHeight="17.0" prefWidth="11.0" text="1" />
-      <Label layoutX="34.0" layoutY="260.0" prefHeight="17.0" prefWidth="11.0" text="2" />
-      <Label layoutX="35.0" layoutY="325.0" prefHeight="17.0" prefWidth="11.0" text="3" />
-      <Label layoutX="545.0" layoutY="196.0" prefHeight="17.0" prefWidth="11.0" text="1" />
-      <Label layoutX="546.0" layoutY="260.0" prefHeight="17.0" prefWidth="11.0" text="2" />
-      <Label layoutX="547.0" layoutY="325.0" prefHeight="17.0" prefWidth="11.0" text="3" />
+      <Label layoutX="46.0" layoutY="182.0" prefHeight="17.0" prefWidth="11.0" text="1" />
+      <Label layoutX="47.0" layoutY="245.0" prefHeight="17.0" prefWidth="11.0" text="2" />
+      <Label layoutX="46.0" layoutY="311.0" prefHeight="17.0" prefWidth="11.0" text="3" />
+      <Label layoutX="534.0" layoutY="180.0" prefHeight="17.0" prefWidth="11.0" text="1" />
+      <Label layoutX="535.0" layoutY="244.0" prefHeight="17.0" prefWidth="11.0" text="2" />
+      <Label layoutX="536.0" layoutY="309.0" prefHeight="17.0" prefWidth="11.0" text="3" />
+      <QuadCurve controlX="-31.4000244140625" controlY="-54.00001525878906" endX="201.79998779296875" endY="-1.52587890625E-5" fill="#717c8600" layoutX="329.0" layoutY="158.0" startX="-259.0" startY="-1.52587890625E-5" stroke="#0000008e" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="5.0" />
+      <Label layoutX="281.0" layoutY="136.0" text="Vászon" />
+      <HBox layoutX="111.0" layoutY="347.0" prefHeight="18.0" prefWidth="125.0">
+         <children>
+            <Label text="Szabad hely (zöld)">
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b9630" height="16.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="237.0" layoutY="347.0" prefHeight="18.0" prefWidth="125.0">
+         <children>
+            <Label text="Kijelölt hely (piros)">
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c231f" height="16.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="363.0" layoutY="347.0" prefHeight="18.0" prefWidth="125.0">
+         <children>
+            <Label text="Foglalt hely (szürke)">
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7afaf" height="16.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
    </children>
    <effect>
       <ColorAdjust />
