@@ -26,7 +26,7 @@ public class Probe_controller {
     @FXML
     void LefoglaltniAHelyet(ActionEvent event) throws IOException {
             // 1. Betöltjük a második FXML fájlt
-            Parent ujNezezet = FXMLLoader.load(getClass().getResource("/META-INF/FXML-ek/FXMLFilmValaszto.fxml"));
+            Parent ujNezezet = FXMLLoader.load(getClass().getResource("/META-INF/FXML-ek/Lefoglalas.fxml"));
 
             // 2. A "pontok" felirat segítségével megfogjuk a jelenlegi ablakot, és lecseréljük a tartalmát
             pontok.getScene().setRoot(ujNezezet);
